@@ -1,0 +1,28 @@
+.add-button {
+    --background: #161920;
+    position: absolute;
+    bottom: 55px;
+    width: 96%;
+    --color: #ffffff;
+    margin-left: 2%;
+}
+.a-button {
+    --background: #383a3e;
+    position: absolute;
+    bottom: 0px;
+    width: 50%;
+    --color: #ffffff;
+    margin-left: 0%;
+}
+.b-button {
+    --background: #383a3e;
+    position:absolute;
+    bottom: 0px;
+    width: 50%;
+    --color: #ffffff;
+    margin-left: 50%;
+}
+ion-card{
+    margin-top: 6px;
+    margin-bottom: 0px;
+}

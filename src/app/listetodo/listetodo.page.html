@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>listetodo</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="bg-img">
+
+    <h5>Liste de tache a faire</h5>
+    
+  </div>
+<ion-content>
+  <ion-card *ngFor="let task of tasks">
+    <ion-item-sliding>
+    <ion-item lines="none">
+      <ion-checkbox (ionChange)="changeCheckState(task)" [(ngModel)]="task.checked" color="success" slot="start"></ion-checkbox>
+      <ion-label>
+        <h2>{{ task.text }}</h2>
+        <p>{{ task.hour }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-item-sliding>
+  </ion-card>
+</ion-content>
+<ion-checkbox  slot="start">Tache termine</ion-checkbox>
+<ion-button (click)='liste()' expand="block" class="b-button">
+  <ion-icon name="#" slot="start"></ion-icon>
+  Todo
+</ion-button>
+
+<ion-button expand="block" class="a-button">
+  <ion-icon name="#" slot="start"></ion-icon>
+  Done
+</ion-button>
